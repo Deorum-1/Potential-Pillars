@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { navLinks, siteConfig } from "../data/content";
+import logo from "../images/Potential-logo.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,22 +14,20 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="bg-navy-900 text-xs text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-end gap-4 px-4 py-1.5">
-          <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-1">
-            <Phone size={12} /> {siteConfig.phone}
-          </a>
-        </div>
-      </div>
-
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link to="/" className="font-display text-xl font-bold text-navy-900">
+        <Link to="/" className="font-display items-center flex text-xl font-bold text-navy-900">
+        <img src={logo} className="w-10 h-10"/>
           {siteConfig.name}
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
           {navLinks.map((l) => (
-            <NavLink key={l.to} to={l.to} className={linkClass} end={l.to === "/"}>
+            <NavLink
+              key={l.to}
+              to={l.to}
+              className={linkClass}
+              end={l.to === "/"}
+            >
               {l.label}
             </NavLink>
           ))}
