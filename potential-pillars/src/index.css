@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #0a1640;
+    --color-navy-800: #142258;
+    --color-navy-700: #1f3170;
+  
+    --color-gold-600: #c08a1f;
+    --color-gold-500: #dba935;
+    --color-gold-300: #f0cf7a;
+  
+    --color-green-600: #2a7a4a;
+  
+    --color-ink: #1a1a2e;
+    --color-cream: #fbf7ee;
+    --color-paper: #ffffff;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply font-sans text-slate-700 antialiased; }
