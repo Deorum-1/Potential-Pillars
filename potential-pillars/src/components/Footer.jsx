@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
         <div>
           <h3 className="font-display text-xl font-bold text-white">{siteConfig.name}</h3>
-          <p className="mt-2 text-sm">{siteConfig.tagline}</p>
+          {/* <p className="mt-2 text-sm">{siteConfig.tagline}</p> */}
         </div>
         <div>
           <h4 className="font-semibold text-white">Quick Links</h4>
