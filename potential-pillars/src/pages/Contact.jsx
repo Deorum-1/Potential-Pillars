@@ -190,7 +190,7 @@ export default function ContactForm() {
           disabled={isSubmitting}
           className="w-full rounded-lg bg-navy-900 px-6 py-3 font-sans text-base font-medium text-white transition hover:bg-navy-800 disabled:cursor-not-allowed disabled:opacity-60 md:w-auto"
         >
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? "Sending..." : "Send Message On Whatsapp"}
         </button>
       </div>
     </form>
