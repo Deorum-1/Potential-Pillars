@@ -181,10 +181,10 @@ export default function Admissions() {
           <div>
             <p className="font-display text-lg text-gold-500">Phone</p>
             <a
-              href="tel:+2348000000000"
+              href="tel:+234 811 182 5551"
               className="mt-1 block font-sans text-base hover:underline"
             >
-              +234 811 182 5551 <br/> +234 706 535 3537
+              +234 811 182 5551 <br/> +234 706 535 3537 <br/> +234 902 155 8959
             </a>
           </div>
 
@@ -214,7 +214,7 @@ export default function Admissions() {
             Call Us Now
           </a>
           <a
-            href="https://wa.me/2347025364239?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20admission%20at%20Potential%20Pillars%20School."
+            href="https://wa.me/2348111825551?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20admission%20at%20Potential%20Pillars%20School."
             className="inline-flex items-center justify-center rounded-lg border border-white/40 px-6 py-3 font-sans text-base font-medium text-white transition hover:bg-white/10"
           >
             Send an message on whatsapp

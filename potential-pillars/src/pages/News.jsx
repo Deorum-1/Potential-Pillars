@@ -10,21 +10,72 @@ export default function NewsEvents() {
       description:
         "Pupils visited Murtala Muhammed International Airport, Lagos, for a hands-on learning experience about travel, aviation, and careers in the aviation industry.",
       tag: "Excursion",
-      image: `${heroImg}`,
+      image: heroImg,
     },
     {
       title: "Christmas Carol Service",
       description:
         "Join us for a joyful evening of carols, nativity, and festive performances by our pupils. Parents, guardians, and friends of the school are warmly invited.",
       tag: "School Event",
-      image: `${carolImg}`,
+      image: carolImg,
     },
     {
       title: "End of Term Prize Giving",
       description:
         "We celebrate excellence as outstanding pupils are honoured for academic achievement, character, and leadership. Parents are invited to share in this special moment.",
       tag: "Celebration",
-      image: `${prizeImg}`,
+      image: prizeImg,
+    },
+  ];
+
+  const upcomingEvents = [
+    {
+      date: "25 Dec 2026",
+      title: "Christmas Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "26 Dec 2026",
+      title: "Boxing Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "1 Jan 2027",
+      title: "New Year's Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "29 Mar 2027",
+      title: "Good Friday",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "31 Mar 2027",
+      title: "Easter Monday",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "1 May 2027",
+      title: "Workers' Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "12 Jun 2027",
+      title: "Democracy Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
+    },
+    {
+      date: "1 Oct 2027",
+      title: "Independence Day",
+      description: "Public holiday. The school will be closed.",
+      tag: "Public Holiday",
     },
   ];
 
@@ -46,7 +97,7 @@ export default function NewsEvents() {
         </div>
       </section>
 
-      {/* Events */}
+      {/* Past / recent events */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="font-display text-xl text-navy-900 md:text-2xl">
           Events
@@ -86,12 +137,41 @@ export default function NewsEvents() {
         </div>
       </section>
 
+      {/* Upcoming public holidays */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
-          <h2 className="font-display text-xl text-navy-900 md:text-2xl">
-          Upcoming Events
+        <h2 className="font-display text-xl text-navy-900 md:text-2xl">
+          Upcoming Holidays
         </h2>
-          </section>
-      
+        <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
+          Public holidays when the school will be closed.
+        </p>
+
+        <div className="mt-6 space-y-4">
+          {upcomingEvents.map((event) => (
+            <div
+              key={event.title}
+              className="flex flex-col gap-4 rounded-2xl border border-navy-100 p-5 sm:flex-row sm:items-start"
+            >
+              <div className="shrink-0 rounded-xl bg-navy-900 px-4 py-3 text-center text-white sm:w-32">
+                <p className="font-display text-sm font-bold">{event.date}</p>
+              </div>
+
+              <div>
+                <span className="inline-block rounded-full bg-gold-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gold-600">
+                  {event.tag}
+                </span>
+                <h3 className="mt-2 font-display text-lg text-navy-900">
+                  {event.title}
+                </h3>
+                <p className="mt-1 font-sans text-sm leading-relaxed text-ink md:text-base">
+                  {event.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="rounded-2xl bg-navy-900 px-6 py-8 text-center">
