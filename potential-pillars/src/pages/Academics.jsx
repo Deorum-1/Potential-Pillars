@@ -1,5 +1,5 @@
 export default function Academics() {
-  const subjects = [
+  const primarySubjects = [
     "English Language & Phonics",
     "Mathematics",
     "Basic Science",
@@ -12,10 +12,25 @@ export default function Academics() {
     "Physical & Health Education",
   ];
 
+  const secondarySubjects = [
+    "English Language",
+    "Mathematics",
+    "Basic Science / Core Science subjects",
+    "Civic Education",
+    "Yoruba Language",
+    "Christian Religious Studies",
+    "Computer Studies / ICT",
+    "Agricultural Science",
+    "Business Studies",
+    "Physical & Health Education",
+  ];
+
   const classes = [
-    { level: "Creche", ages: "0 – 2 years" },
-    { level: "Pre-Nursery / Nursery 1 – 2", ages: "3 – 5 years" },
-    { level: "Primary 1 – 6", ages: "6 – 11 years" },
+    { level: "Creche", ages: "0 – 2 years", section: "Early Years" },
+    { level: "Pre-Nursery / Nursery 1 – 2", ages: "3 – 5 years", section: "Early Years" },
+    { level: "Primary 1 – 6", ages: "6 – 11 years", section: "Primary" },
+    { level: "JSS 1 – 3", ages: "12 – 14 years", section: "Secondary" },
+    { level: "SSS 1 – 3", ages: "15 – 18 years", section: "Secondary" },
   ];
 
   const terms = [
@@ -37,12 +52,20 @@ export default function Academics() {
       title: "Report Cards",
       detail: "detailed feedback shared with parents every term",
     },
+    {
+      title: "WAEC / NECO Preparation",
+      detail: "structured exam preparation for SSS3 students",
+    },
   ];
 
   const facilities = [
     {
       title: "ICT / Computer Lab",
       detail: "hands-on digital literacy from an early age",
+    },
+    {
+      title: "Science Laboratory",
+      detail: "practical, hands-on science for JSS and SSS students",
     },
     {
       title: "Well-equipped classrooms",
@@ -76,10 +99,11 @@ export default function Academics() {
       <div className="max-w-3xl">
         <p className="font-sans text-base leading-relaxed text-ink md:text-lg">
           At Potential Pillars School, we build on the Nigerian National
-          Curriculum to give every child a strong academic foundation,
-          paired with the good character and leadership skills they'll
-          need for life. Our teaching goes beyond passing exams we
-          nurture curious minds ready to lead tomorrow.
+          Curriculum to give every child — from Creche through Senior
+          Secondary — a strong academic foundation, paired with the good
+          character and leadership skills they'll need for life. Our
+          teaching goes beyond passing exams — we nurture curious minds
+          ready to lead tomorrow.
         </p>
       </div>
 
@@ -93,6 +117,7 @@ export default function Academics() {
           <table className="w-full text-left font-sans text-base text-ink md:text-lg">
             <thead>
               <tr className="bg-navy-900 text-white">
+                <th className="px-4 py-3 font-medium">Section</th>
                 <th className="px-4 py-3 font-medium">Level</th>
                 <th className="px-4 py-3 font-medium">Ages</th>
               </tr>
@@ -103,6 +128,9 @@ export default function Academics() {
                   key={c.level}
                   className={i % 2 === 0 ? "bg-cream" : "bg-white"}
                 >
+                  <td className="px-4 py-3 font-medium text-navy-900">
+                    {c.section}
+                  </td>
                   <td className="px-4 py-3">{c.level}</td>
                   <td className="px-4 py-3">{c.ages}</td>
                 </tr>
@@ -112,10 +140,10 @@ export default function Academics() {
         </div>
       </div>
 
-      {/* What We Teach */}
+      {/* What We Teach — Primary */}
       <div className="mt-10">
         <h2 className="font-display text-xl text-navy-900 md:text-2xl">
-          What We Teach
+          What We Teach — Creche, Nursery & Primary
         </h2>
 
         <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
@@ -124,7 +152,29 @@ export default function Academics() {
         </p>
 
         <ul className="mt-4 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2 font-sans text-base text-ink md:text-lg">
-          {subjects.map((subject) => (
+          {primarySubjects.map((subject) => (
+            <li key={subject} className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+              {subject}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* What We Teach — Secondary */}
+      <div className="mt-10">
+        <h2 className="font-display text-xl text-navy-900 md:text-2xl">
+          What We Teach — JSS & SSS (Secondary)
+        </h2>
+
+        <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
+          Our secondary curriculum builds on the primary foundation,
+          preparing students for JSCE and WAEC/NECO, with core subjects
+          including:
+        </p>
+
+        <ul className="mt-4 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2 font-sans text-base text-ink md:text-lg">
+          {secondarySubjects.map((subject) => (
             <li key={subject} className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
               {subject}
@@ -133,8 +183,9 @@ export default function Academics() {
         </ul>
 
         <p className="mt-4 font-sans text-base leading-relaxed text-ink md:text-lg">
-          Every subject is taught with a focus on understanding, not
-          memorization — so pupils build real knowledge, not just grades.
+          Every subject, at every level, is taught with a focus on
+          understanding, not memorization so pupils build real
+          knowledge, not just grades.
         </p>
       </div>
 
@@ -145,7 +196,8 @@ export default function Academics() {
         </h2>
 
         <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
-          P.P.S. runs on the standard three-term academic year:
+          P.P.S. runs on the standard three-term academic year, across all
+          sections:
         </p>
 
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -192,7 +244,7 @@ export default function Academics() {
 
         <p className="mt-4 font-sans text-base leading-relaxed text-ink md:text-lg">
           This combination gives parents a clear, ongoing picture of their
-          child's progress — not just a single exam score.
+          child's progress not just a single exam score.
         </p>
       </div>
 
@@ -203,7 +255,8 @@ export default function Academics() {
         </h2>
 
         <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
-          We invest in the tools that help pupils learn best:
+          We invest in the tools that help pupils learn best, across every
+          level:
         </p>
 
         <ul className="mt-4 space-y-3 font-sans text-base text-ink md:text-lg">
@@ -227,7 +280,7 @@ export default function Academics() {
 
         <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
           Academics at P.P.S. is paired with activities that build character
-          and leadership:
+          and leadership, for pupils and students alike:
         </p>
 
         <ul className="mt-4 grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2 font-sans text-base text-ink md:text-lg">

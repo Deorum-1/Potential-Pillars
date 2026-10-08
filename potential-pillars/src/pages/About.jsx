@@ -22,8 +22,8 @@ export default function About() {
     "A strong curriculum that builds confidence and results.",
     "Qualified staff who know every student by name.",
     "Safe classrooms, labs, library and playgrounds.",
-    "Small class sizes with dedicated, caring teachers",
-    "Small classes so no child gets left behind.",
+    "Small class sizes with dedicated, caring teachers.",
+    "A clear path from Creche all the way to Senior Secondary.",
   ];
 
   return (
@@ -40,12 +40,12 @@ export default function About() {
 
       <div className="max-w-3xl">
         <p className="font-sans text-base leading-relaxed text-ink md:text-lg">
-          Potential Pillars School (P.P.S.) is a nursery and primary school
-          located in Orimerunmu, committed to raising children who will
-          become the future's strong minds, good character, and great
-          leaders. We believe every child who walks through our gate holds
-          the potential to shape tomorrow and our role is to help them
-          discover it.
+          Potential Pillars School (P.P.S.) is a nursery, primary and
+          secondary school located in Orimerunmu, committed to raising
+          children who will become the future's strong minds, good
+          character, and great leaders. We believe every child who walks
+          through our gate holds the potential to shape tomorrow and our
+          role is to help them discover it.
         </p>
       </div>
 
@@ -58,9 +58,10 @@ export default function About() {
           Founded with a simple belief that every child deserves a solid
           foundation Potential Pillars School was built to give families
           in our community access to quality, values-driven education close
-          to home. From our first set of pupils to today, we remain
-          committed to that same mission: raising the future pillars, one
-          child at a time.
+          to home, from their very first class all the way through
+          secondary school. From our first set of pupils to today, we
+          remain committed to that same mission: raising the future
+          pillars, one child at a time.
         </p>
       </div>
 
@@ -82,9 +83,9 @@ export default function About() {
             Our Vision
           </h2>
           <p className="mt-3 font-sans text-base leading-relaxed text-ink md:text-lg">
-            To be a leading nursery and primary school recognized for
-            academic excellence, strong moral foundation, and the
-            confident, capable leaders we send out into the world.
+            To be a leading nursery, primary and secondary school
+            recognized for academic excellence, strong moral foundation,
+            and the confident, capable leaders we send out into the world.
           </p>
         </div>
       </div>
@@ -130,10 +131,11 @@ export default function About() {
       {/* Commitment / CTA */}
       <div className="mt-12 rounded-2xl bg-navy-900 px-6 py-8 text-center">
         <p className="font-display text-xl italic text-white md:text-2xl">
-          "P.P.S., Raising the Future Pillars through sound academics and moral training!!!"
+          "P.P.S., Raising the Future Pillars through sound academics and
+          moral training!!!"
         </p>
         <p className="mt-2 font-sans text-sm text-white/80 md:text-base">
-          Not just our motto our daily promise to every parent who trusts
+          Not just our motto — our daily promise to every parent who trusts
           us with their child.
         </p>
       </div>
