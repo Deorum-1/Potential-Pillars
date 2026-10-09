@@ -92,17 +92,17 @@ export default function Academics() {
           Academics
         </h1>
         <p className="mt-3 font-display text-xl text-gold-600 md:text-2xl">
-          Raising the Future Pillars — Academically
+          Raising the Future Pillars Academically
         </p>
       </div>
 
       <div className="max-w-3xl">
         <p className="font-sans text-base leading-relaxed text-ink md:text-lg">
           At Potential Pillars School, we build on the Nigerian National
-          Curriculum to give every child — from Creche through Senior
-          Secondary — a strong academic foundation, paired with the good
+          Curriculum to give every child from Creche through Senior
+          Secondary a strong academic foundation, paired with the good
           character and leadership skills they'll need for life. Our
-          teaching goes beyond passing exams — we nurture curious minds
+          teaching goes beyond passing exams we nurture curious minds
           ready to lead tomorrow.
         </p>
       </div>

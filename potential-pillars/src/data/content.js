@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Potential Pillars",
   tagline: ["Primary", " | ", "Secondary"],
   address: "2, Divine Champion Estate, Orimerunmu, Ogun State.",
-  phone: ["+234 811 825 5551", " +234 706 535 3537", " +234 902 155 8959"],
+  phone: ["+234 811 825 5551", " | ", " +234 706 535 3537", " | ", " +234 902 155 8959"],
   email: "potentialpillars10@gmail.com",
   hours: "Mon – Fri: 8:00 AM – 4:00 PM",
 };
@@ -23,13 +23,13 @@ export const programs = [
   {
     title: "Primary School",
     ages: "Primary 1 – 6",
-    text: "A solid foundation in literacy, numeracy, science and creativity.",
+    text: "",
     image: "/images/primary.jpg",
   },
   {
     title: "Secondary School",
     ages: "JSS 1 – 3 and SSS 1 - 3",
-    text: "A solid foundation in literacy, numeracy, science and creativity.",
+    text: "",
     image: "/images/Secondary.jpg",
   },
 ];
