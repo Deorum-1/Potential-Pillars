@@ -35,7 +35,7 @@ export const programs = [
 ];
 
 export const stats = [
-  { value: "100+", label: "Students" },
+  { value: "200+", label: "Students" },
   { value: "20+", label: "Teachers" },
   { value: "10:1", label: "Student–teacher ratio" },
   { value: "98%", label: "Exam pass rate" },
