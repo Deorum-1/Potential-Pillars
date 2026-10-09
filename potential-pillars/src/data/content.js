@@ -23,13 +23,13 @@ export const programs = [
   {
     title: "Primary School",
     ages: "Primary 1 – 6",
-    text: "",
+    text: "Raising the future pillars through sound academics and moral training.",
     image: "/images/primary.jpg",
   },
   {
     title: "Secondary School",
     ages: "JSS 1 – 3 and SSS 1 - 3",
-    text: "",
+    text: "Raising the future pillars through sound academics and moral training.",
     image: "/images/Secondary.jpg",
   },
 ];
